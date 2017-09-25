@@ -2,7 +2,7 @@
 
 ubuntu下的[安装](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-from-a-package)
 
-max下的[安装]( [https://download.docker.com/mac/stable/Docker.dmg](https://download.docker.com/mac/stable/Docker.dmg))
+Mac下的[安装](https://download.docker.com/mac/stable/Docker.dmg)
 
 mac下通过Docker Quickstart Terminal.app启动
 
