@@ -1,14 +1,11 @@
-### docker安装启动
+## docker安装启动
 
 ubuntu下的[安装](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-from-a-package)
 
-Mac下的[安装](https://download.docker.com/mac/stable/Docker.dmg)
-
-mac下通过Docker Quickstart Terminal.app启动
+max下的[安装]( https://download.docker.com/mac/stable/Docker.dmg)
 
 国内镜像: [网易蜂巢](https://c.163.com/hub#/m/library/)
-
-### 基本信息
+## 基本信息
 
 > docker版本
 
@@ -39,10 +36,10 @@ docker images
 > 删除镜像
 
 ```
-docker rim 镜像名 
+docker rmi 镜像名 
 ```
 
-### 容器
+## 容器
 
 > 基本镜像创建容器
 
@@ -84,7 +81,7 @@ exit
 docker rm [-f] 容器名    # 删除容器, 会丢失里面的数据, f: 强制
 ```
 
-### 创建镜像
+## 创建镜像
 
 > 新建dockerfile文件
 
@@ -113,29 +110,9 @@ docker build -t="pladily/static_web" . #-t为该docker的name，.代表当前目
 docker push pldaily/static_web
 ```
 
-### 示例
-
-- 登陆
-
+## 使用 dockerfile
 ```
-docker login -u gitlab-ci -p y$4E*^MwFl7NqAL oa.52liuda.com:25000
+docker build -f /path/to/a/Dockerfile .
 ```
 
-- 拉取
-
-```
-docker pull oa.52liuda.com:25000/ops/mobile:bloat
-```
-
-- 创建容器
-
-```
-docker run -d -p 80:80 --name h5test oa.52liuda.com:25000/ops/mobile:bloat
-```
-
-- 进入容器
-
-```
-docker exec -it h5test /bin/bash
-```
 
