@@ -24,7 +24,7 @@ WORKDIR /data
 # Install g++ for any C/C++ based implementations
 RUN apt-get -y install g++
 
-# Add nodesource apt repo config for 7.X
+# Add nodesource apt repo config for 8.X
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 
 # Install nodejs
@@ -39,12 +39,9 @@ RUN apt-get -y install python3
 # For dist packaging
 RUN apt-get -y install zip
 
+# Install php
 RUN apt-get -y install php7.0-cli
 
+# Install go
 RUN apt-get -y install pkg-config
 RUN apt-get -y install golang
-
-# Java and maven
-RUN apt-get -y install openjdk-7-jdk
-RUN apt-get -y install maven2
-ENV MAVEN_OPTS -Duser.home=/data
