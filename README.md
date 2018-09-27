@@ -1,10 +1,9 @@
 ## docker安装启动
 
-ubuntu下的[安装](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-from-a-package)
+- ubuntu下的[安装](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-from-a-package)
 
-max下的[安装]( https://download.docker.com/mac/stable/Docker.dmg)
+- max下的[安装]( https://download.docker.com/mac/stable/Docker.dmg)
 
-国内镜像: [网易蜂巢](https://c.163.com/hub#/m/library/)
 ## 基本信息
 
 > docker版本
@@ -112,7 +111,7 @@ docker push pldaily/static_web
 
 ## 使用 dockerfile
 ```
-docker build -f /path/to/a/Dockerfile .
+docker build -f /path/to/a/Dockerfile -t name .
 ```
 
 
